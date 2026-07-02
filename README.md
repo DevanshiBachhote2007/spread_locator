@@ -339,7 +339,9 @@ data = pd.read_csv('spread_locator_dataset.csv.csv')
 data.head()
 ```
 
-> 📸 Output: The notebook displays the first rows of the transaction dataset.
+> 📸 Output:
+ <img width="1032" height="362" alt="image" src="https://github.com/user-attachments/assets/aaa5da1c-bcb7-403f-b3fc-6da5f5d9e4eb" />
+
 
 ---
 
@@ -356,6 +358,9 @@ plt.xlabel('Transaction Status (0=Fail, 1=Success)')
 plt.ylabel('Count')
 plt.show()
 ```
+> 📸 Output:
+<img width="600" height="478" alt="image" src="https://github.com/user-attachments/assets/6c69d59c-4916-42b7-bcac-4c5af92c86ad" />
+
 
 ```python
 sns.histplot(data['transaction_count'], bins=10, kde=False)
@@ -365,7 +370,9 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-> 📸 Output: The notebook shows the distribution of success/failure outcomes and weekly transaction counts.
+> 📸 Output:
+<img width="583" height="476" alt="image" src="https://github.com/user-attachments/assets/7eec4176-92bf-43aa-bb6f-34008cfe7271" />
+
 
 ---
 
@@ -390,7 +397,9 @@ plt.ylabel('Probability')
 plt.show()
 ```
 
-> 📸 Output: A probability plot for the daily transaction count is generated.
+> 📸 Output:
+<img width="645" height="418" alt="image" src="https://github.com/user-attachments/assets/8f23a2b3-ca18-434c-9945-d08c3b46a05d" />
+
 
 ---
 
@@ -414,6 +423,8 @@ plt.plot(x, pdf, 'b', linewidth=2)
 plt.title('Log-Normal Fit')
 plt.show()
 ```
+> 📸 Output:
+<img width="753" height="499" alt="image" src="https://github.com/user-attachments/assets/d695c595-cc33-4a56-aed0-e727e8c79ae7" />
 
 ```python
 shape, loc, scale = powerlaw.fit(amt)
@@ -426,7 +437,10 @@ plt.title('Power Law Fit')
 plt.show()
 ```
 
-> 📸 Output: The notebook displays fitted distribution curves over the transaction amount histogram.
+> 📸 Output:
+<img width="740" height="492" alt="image" src="https://github.com/user-attachments/assets/a5e1f98f-23af-489f-b01f-639a8554f349" />
+
+
 
 ---
 
@@ -450,7 +464,9 @@ else:
     print('Data is Not Normally Distributed.')
 ```
 
-> 📸 Output: The Q-Q plot and test result indicate whether the data is close to normal.
+> 📸 Output:
+<img width="580" height="565" alt="image" src="https://github.com/user-attachments/assets/2ca1234b-d57f-432f-bde0-e6022f0033ed" />
+
 
 ---
 
@@ -474,7 +490,9 @@ plt.title('After Box-Cox')
 plt.show()
 ```
 
-> 📸 Output: The transformed data becomes more symmetric and easier to model.
+> 📸 Output:
+<img width="999" height="477" alt="image" src="https://github.com/user-attachments/assets/185980db-05eb-460f-8c78-eb8362b29579" />
+
 
 ---
 
@@ -492,7 +510,9 @@ prob = 1 - norm.cdf(5000, loc=mean, scale=std)
 print('Probability of Transaction Amount > ₹5000:', prob)
 ```
 
-> 📸 Output: Standardized values and the probability of large transactions are printed.
+> 📸 Output:
+<img width="506" height="144" alt="image" src="https://github.com/user-attachments/assets/2d9c84d7-d8dd-43a9-a869-28ced8fddc0a" />
+
 
 ---
 
@@ -522,7 +542,10 @@ plt.grid(True)
 plt.show()
 ```
 
-> 📸 Output: Both PDF and CDF plots are displayed for interpretation.
+> 📸 Output:
+<img width="750" height="485" alt="image" src="https://github.com/user-attachments/assets/803e2b3b-01c9-41be-9b49-9e40bc63226f" />
+<img width="705" height="486" alt="image" src="https://github.com/user-attachments/assets/a8dd5078-da2c-4ffb-8d24-2fda7079978e" />
+
 
 ---
 
@@ -546,7 +569,9 @@ else:
     print('\nBest Fit: Power Law Distribution')
 ```
 
-> 📸 Output: The notebook prints the log-likelihood values and identifies the better-fitting distribution.
+> 📸 Output:
+<img width="411" height="107" alt="image" src="https://github.com/user-attachments/assets/a96d9917-02e3-4976-ad75-7b04651c78bb" />
+
 
 ---
 
