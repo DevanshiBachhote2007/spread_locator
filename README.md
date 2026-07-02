@@ -23,7 +23,7 @@ A complete project that explains the fundamentals of statistical distributions a
 
 <br>
 
-<a href="#notebook-walkthrough">
+<a href="https://drive.google.com/file/d/17M3KIRujWQDcMzYgIerYWzHUHTqjcH6y/view?usp=drive_link">
 <img src="https://img.shields.io/badge/🎥_Project_Demo-4CAF50?style=for-the-badge"/>
 </a>
 
